@@ -2,6 +2,8 @@
   text-align: center;
 }
 
+/* === Editor === */
+
 .editor-container{
   max-width: 610px;
   margin: 0 auto;
@@ -11,10 +13,21 @@
 }
 
 .editor-toolbar{
+  display: flex;
+  flex-direction: row;
   height: 36px;
   max-width: 610px;
   border-bottom: 2px solid black;
   margin-bottom: .3em;
+}
+
+.editor-toolbar i{
+  margin: .4em .4em .4em auto;
+}
+
+.editor-toolbar i:hover{
+  color: lightblue;
+  cursor: pointer;
 }
 
 #editor{
@@ -23,6 +36,7 @@
   resize: vertical;
 }
 
+/* === Previewer === */
 
 .previewer-container{
   max-width: 810px;
@@ -34,7 +48,19 @@
 
 .previewer-toolbar{
   height: 36px;
-  max-width: 800px;
+  max-width: 810px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid black;
+}
+
+.previewer-toolbar i{
+  margin: .4em .4em .4em auto;
+}
+
+.previewer-toolbar i:hover{
+  color: lightblue;
+  cursor: pointer;
 }
 
 #preview{
