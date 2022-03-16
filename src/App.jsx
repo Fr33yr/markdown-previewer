@@ -47,12 +47,12 @@ export function App(){
 
     <Fragment>
 
-        <div className="editor-container">
+        <div className={ maxprev ? "hide-editor max-editor" : "editor-container"}>
           <div className="editor-toolbar">Toolbar<i onClick={()=> setMaxEdit(!maxedit)} className={maxedit ? "fa-solid fa-minimize" : "fa-solid fa-up-down-left-right"}></i></div>
-          <textarea name="textarea" id="editor" value={text} onChange={(e) => setText(e.target.value)} cols="30" rows="10"></textarea>
+          <textarea name="textarea" className={ maxedit ? "editor-max" : "editor"} id="editor" value={text} onChange={(e) => setText(e.target.value)} cols="30" rows="10"></textarea>
         </div>
 
-        <div className="previewer-container">
+        <div className={maxedit ? "hide-previewer" : "previewer-container"}>
           <div className="previewer-toolbar">Toolbar<i onClick={()=> setMaxPrev(!maxprev)} className={maxprev ? "fa-solid fa-minimize" : "fa-solid fa-up-down-left-right"}></i></div>
           <div className="previewer" id="preview" dangerouslySetInnerHTML={{ __html: md.render(text) }}></div>
         </div>

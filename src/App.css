@@ -32,7 +32,6 @@
 
 #editor{
   max-width: 600px;
-  min-height: 200px;
   resize: vertical;
 }
 
@@ -75,4 +74,22 @@ img{
   
   width: 200px;
   height: 200px;
+}
+
+/* === Hide === */
+
+.hide-editor{
+  display: none;
+}
+
+.hide-previewer{
+  display: none;
+}
+
+.editor-max{
+  min-height: 500px;
+}
+
+.editor{
+  min-height: 200px;
 }
