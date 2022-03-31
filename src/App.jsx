@@ -56,6 +56,8 @@ export function App(){
           <div className="previewer-toolbar">Toolbar<i onClick={()=> setMaxPrev(!maxprev)} className={maxprev ? "fa-solid fa-minimize" : "fa-solid fa-up-down-left-right"}></i></div>
           <div className="previewer" id="preview" dangerouslySetInnerHTML={{ __html: md.render(text) }}></div>
         </div>
+
+        <footer><a href="https://github.com/Fr33yr/markdown-previewer" target={"_blank"} rel={"noopener noreferrer"}>Code</a></footer>
     </Fragment>
   )
 }

@@ -100,3 +100,14 @@ img{
 .editor{
   min-height: 200px;
 }
+
+footer{
+  margin: 10vh 0 5vh 0;
+  text-align: center;
+}
+
+footer a{
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+}
